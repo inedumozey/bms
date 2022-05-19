@@ -1,0 +1,186 @@
+:root {
+    --headerHeight: 40px;
+    --footerHeight: 19px;
+    --userTabHeight: 40px;
+    --sidebarWidth: 40px;
+    --userTabMarginTop: 3px;
+    --static-theme: rgb(0, 122, 205);
+    --inputBg: rgb(155, 199, 220);
+    --inputFocusBg: rgb(255, 255, 255);
+
+    
+
+    --themesilverAppColor: rgb(153 149 149);
+    --themesilverSidebarColor: rgb(68 66 66);
+    --themesilverUserTabColor: rgb(93 91 91);
+    --themeSilverHeaderText : #000000;
+    --themeSilverGrad1 : #fffbfb;
+    --themeSilverGrad2 : #c9c9c9;
+    --themeSilverGrad3 : #b7b2b2;
+    --themeSilverGrad4 : #c3bfbf;
+    --themeSilverGrad5 : #aeb0b1;
+    --themeSilverGrad6 : #b4b3bf;
+    --themeSilverGrad7 : #161616;
+    --themeSilverGrad8 : #505050;
+    --themeSilverGrad9 : #c9c9c9;
+    --themeSilverGrad10 : #fffbfb;
+    --themeSilverShadow1: #000;
+    --themeSilverShadow2: #444;
+    --themeSilverHoverColor: rgb(130, 129, 129);
+
+
+
+    --themeDarkAppColor: rgb(38 38 38);
+    --themeDarkBorderColor: rgb(51, 50, 50);
+    --themeDarkBorderColor2: rgb(155, 152, 152);
+    --themeDarkSidebarColor: rgb(0 0 0);
+    --themeDarkUserTabColor: rgb(24, 23, 23);
+
+    --themeDarkUserActiveTabColor: rgb(96 95 95);
+    --themeDarkUserSelectedTabColor: rgb(44 43 43);
+
+    --themeDarkHeaderText: #fff;
+    --themeDarkGrad1: rgb(137 134 134);
+    --themeDarkGrad2: rgb(70 69 69);
+    --themeDarkGrad3: rgb(70 68 68);
+    --themeDarkGrad4: rgb(72 71 71);
+    --themeDarkGrad5: rgb(82 79 79);
+    --themeDarkGrad6: rgb(96 94 94);
+    --themeDarkGrad7: rgb(48 48 48);
+    --themeDarkGrad8: rgb(86 84 84);
+    --themeDarkGrad9: rgb(4 4 4);
+    --themeDarkGrad10: rgb(22 22 22);    
+    --themeDarkShadow1: #000;
+    --themeDarkShadow2: rgb(34, 33, 33);
+    --themeDarkHoverColor: rgb(16, 15, 15);
+    --themeDarkScrollThumbColor: rgb(23, 19, 233);
+}
+
+
+.text-small{
+    font-size: .7rem;
+}
+.text-mid{
+    font-size: .8rem;
+}
+.text-large{
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.ellipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+ul, li{
+    list-style: none;
+}
+
+.icon{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon.small{
+    width: 18px;
+    height: 18px;
+}
+
+.icon.mid{
+    width: 32px;
+    height: 32px;
+}
+
+.icon.large{
+    width: 90px;
+    height: 90px;
+}
+
+.icon.round{
+    border-radius: 50%;
+}
+
+img{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.scrolX{
+    overflow-x: auto;
+}
+.scrolX::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+.scrolX::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: var(--themeDarkScrollThumbColor);
+}
+
+.scrolX::-webkit-scrollbar-tract{
+    background-color: transparent;
+}
+
+.scrolY{
+    overflow-y: auto;
+}
+.scrolY::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+.scrolY::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: var(--themeDarkScrollThumbColor);
+}
+.scrolY::-webkit-scrollbar-tract{
+    background-color: transparent;
+}
+
+
+.scrolX-small{
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.scrolX-small::-webkit-scrollbar{
+    width: 3px;
+    height: 3px;
+}
+.scrolX-small::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: var(--themeDarkScrollThumbColor);
+}
+.scrolX-small::-webkit-scrollbar-tract{
+    background-color: transparent;
+}
+
+.enlargeRoute:hover{
+    transform: scale(1.2, 1.2);
+    transition: .5s;
+}
+
+.enlarge:hover{
+    transform: scale(1.1, 1.1);
+    transition: 1s;
+}
+
+#focusRoute{
+    transform: scale(1.2, 1.3);
+}
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}

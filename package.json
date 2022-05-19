@@ -1,0 +1,36 @@
+{
+  "name": "bms",
+  "version": "1.0.0",
+  "description": "billing management app",
+  "main": "./main.js",
+  "build": {
+    "appId": "com.electron.bms"
+  },
+  "scripts": {
+    "dev": "wait-on http://localhost:3000 && electron .",
+    "d": "electron .",
+    "build": "cd views && npm run build && cd .. && electron-builder",
+    "build2": "electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inedumozey/bms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inedumozey/bms/issues"
+  },
+  "dependencies": {
+    "@mozeyinedu/check": "^1.0.3",
+    "@mozeyinedu/xl": "^3.0.0",
+    "bcrypt": "^5.0.1",
+    "electron-is-dev": "^2.0.0",
+    "uuid": "^8.3.2",
+    "xlsx": "^0.18.0"
+  },
+  "devDependencies": {
+    "electron": "^17.0.0",
+    "electron-builder": "^22.14.5"
+  }
+}

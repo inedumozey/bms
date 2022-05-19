@@ -1,0 +1,204 @@
+.box{
+    position: relative;
+    cursor: default;
+    min-width: 335px;
+    width: 95%;
+    max-width: 1000px;
+    padding-bottom: 40px;
+    margin: 10px;
+    border: 2px solid var(--themeDarkBorderColor);
+}
+.profile .logoWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile .logoBox{
+    width: 120px;
+    height: 110px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile .logoGhostWrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    z-index: 2;
+}
+.profile .logo{
+    width: 80px;
+    left: 50%;
+    height: 80px;
+}
+.profile .type{
+    text-align: center;
+    color: rgb(104, 102, 102);
+}
+
+.dashboardMain .name{
+    text-align: center;
+    background: rgb(22, 22, 22);
+    padding: 10px;
+}
+
+.profile .acce{
+    padding: 2px 10px;
+    word-wrap: break-word;
+}
+
+.profile .edit{
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    width: 100%;
+    margin-top: 10px;
+    padding: 0 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.profile .editText{
+    padding: 2px 5px;
+    border: 1px solid #999;
+    display: inline-block;
+    font-size: .7rem;
+    cursor: pointer;
+    text-align: center;
+    background: rgb(22, 22, 22);
+}
+
+
+.box:hover .edit{
+    display: block;
+}
+
+
+.editForm{
+    padding: 10px;
+    border-top: 1px solid rgb(51, 50, 50);;
+}
+.dashboardMain .editForm label{
+    color: rgb(7, 146, 146)
+}
+.dashboardMain .editForm input{
+    border: 1px solid rgb(51, 50, 50);;
+    background-color: inherit;
+    color: rgb(124, 123, 123);
+}
+.dashboardMain .editForm input:focus{
+    border: 1px solid rgb(51, 50, 50);;
+    background-color: inherit;
+}
+.dashboardMain .editForm .form-group-file{
+    display: flex;
+    justify-content: center;
+}
+.dashboardMain .editForm .dropZone{
+    border:1px solid rgb(51, 50, 50);
+    width: 200px;
+    height: 150px;
+}
+
+.profile .editForm .deleteDoc{
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    background: red;
+    display: inline-block;
+    padding: 3px;
+    text-align: center;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+.profile .contacts .linkWrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.profile .contacts .linkIcon{
+    width: 30px;
+    display: flex;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.profile .contacts .link{
+    padding: 0 5px;
+}
+
+.profile .contactBody{
+    padding: 10px;
+}
+
+.contactBody .invoiceLinkWrapper{
+    border: 1px solid var(--themeDarkBorderColor);
+    position: relative;
+    color: teal;
+    margin: 5px 0 25px 0;
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.box.invoiceContact .contactBody{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contactBody .invoiceLinkWrapper .contactName{
+    color: #fff;
+    position: absolute;
+    padding: 0 5px;
+    top:-10px;
+    left: 5px;
+    background: var(--themeDarkAppColor);
+}
+
+.contactBody .invoiceLinkWrapper .save{
+    color: #fff;
+    position: absolute;
+    padding: 2px 5px;
+    top:-10px;
+    right: 5px;
+    cursor: pointer;
+    background: rgb(170, 18, 18);
+}
+
+.contactBody .invoiceLinkWrapper .contacts{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    margin: 5px;
+}
+
+.invoiceLinkWrapper .contacts.active{
+    color: rgb(9, 247, 247);
+}
+
+.invoiceLinkWrapper .contacts.active:hover,
+.invoiceLinkWrapper .contacts:hover{
+    opacity: .6;
+}
+
+.contactBody .msg{
+    position: left;
+    top:0;
+    width: 100%;
+}

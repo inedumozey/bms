@@ -1,0 +1,155 @@
+.receipt{
+    margin: auto;
+    padding: 10px;
+    width: calc(270.77px + 5px);
+    background: #fff;
+    color: #000;
+    cursor: default;
+    user-select:text;
+    -webkit-user-select:text;
+    position: relative;
+}
+
+.popUpFrame{
+    background: rgba(0, 0, 0, .8);
+    color: #fff;
+    width: 150px
+}
+.mainReceiptWrapper{
+    margin :10px
+}
+
+.mainReceiptWrapper:hover{
+    opacity: .8;
+}
+
+.receipt-header .invoiceID{
+    font-size: .75rem;
+    padding: 3px 0;
+    font-size: .75rem;
+    font-weight: bold;
+}
+
+.receipt-header-name{
+    text-align: center;
+    color: var(--static-theme);
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+.receipt-header-address{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+.receipt-header-about{
+    text-align: center;
+    font-size: .7rem;
+}
+
+.receipt-header-address.branch{
+    font-weight: 400;
+}
+
+.receipt-header .date{
+    border-bottom: 1px dashed #000;
+    border-top: 1px dashed #000;
+    margin: 5px 0;
+    padding: 2px 5px;
+}
+
+.receipt-header .datec{
+    font-size: .7rem;
+    font-weight: 600;
+}
+
+.receipt-contents table{
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+.receipt-contents td,
+.receipt-contents th{
+    padding: 1px 5px;
+    font-size: .72rem;
+    border: 1px solid #000;
+}
+
+.receipt-contents table tr th:nth-child(2),
+.receipt-contents table tr th:nth-child(3)
+.receipt-contents table tr th:nth-child(4)
+.receipt-contents table tr th:nth-child(5){
+    width: 10px
+}
+
+.receipt-contents table tr th:nth-child(1){
+    width: 200px;
+}
+
+.receipt-footer{
+    position: relative;
+    padding: 0 2px;
+}
+
+.receipt-footer .receipt-currency{
+    position: absolute;
+    font-weight: bold;
+    width: 75px;
+    font-size: .7rem;
+    top: 0;
+    right: 0;
+}
+
+.receipt-footer .receipt-grand-total{
+    display: inline-block;
+    width: calc(100% - 75px);
+    font-size: .75rem;
+    font-weight: bold;
+}
+
+.receipt-footer .receipt-payment-mode{
+    border-top: 1px dashed #000;
+    padding: 0 0 3px 0;
+    margin: 10px 0 5px 0;
+    border-bottom: 1px dashed #000;
+}
+
+.receipt-footer .receipt-payment-mode div{
+    font-size: .75rem;
+}
+
+.receipt-footer .receipt-contacts{
+    margin-top: 10px;
+}
+
+.receipt-footer .receipt-contact-wrapper{
+    display: flex;
+}
+
+.receipt-footer .receipt-contact-name{
+    margin-right: 2px;
+    font-size: .73rem;
+    font-weight: bold;
+    
+}
+
+.receipt-footer .receipt-contact{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.receipt-footer .receipt-contact-link{
+    font-size: .73rem;
+    padding-right: 3px;
+}
+
+.receipt-footer .digest{
+    text-align: center;
+    font-size: .7rem;
+    font-weight: bold
+}

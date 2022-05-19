@@ -1,0 +1,209 @@
+.header-wrapper{
+    width: 100%;
+    -webkit-app-region: drag;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(var(--headerHeight) / 1.719);
+}
+
+.header-wrapper .left,
+.header-wrapper .center,
+.header-wrapper .right{
+    height: 100%;
+    -webkit-app-region: no-drag;
+}
+
+
+/* ------------------------right item------------------------ */
+.header-wrapper .right{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-wrapper .right .quit,
+.header-wrapper .right .maximize,
+.header-wrapper .right .minimize{
+    height: 100%;
+    width: calc(100px / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header-wrapper .right .quit{
+    padding: 5px;
+    background-color: #a10505;
+}
+
+.quit div{
+    width: 2px;
+    height: 11px;
+    transform: rotate(45deg);
+    position:relative;
+    background: #fff;
+}
+
+.quit div:after{
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 2px;
+    height: 11px;
+    transform: rotate(-90deg);
+}
+
+.header-wrapper .right .quit:hover{
+    background: #f30606;
+}
+
+.header-wrapper .minimize div{
+    width: 9px;
+    height: 2.5px;
+    position:relative
+}
+
+.header-wrapper .maximize div{
+    width: 10px;
+    height: 10px;
+    position:relative
+}
+
+.header-wrapper .right .maximize:hover{
+    background-color: var(--static-theme);
+}
+
+.header-wrapper .right .minimize:hover{
+    background-color: var(--static-theme);
+}
+
+.header-wrapper .right .maximize:hover div{
+    border: 2px solid#fff;
+}
+
+.header-wrapper .right .minimize:hover div{
+    background-color: #fff;
+}
+
+
+/* ----------------------------center---------------------------- */
+.menu{
+    display: flex;
+    align-items: center;
+    -webkit-app-region: no-drag;
+    border: none;
+}
+
+.menu-list{
+    position: relative;
+    padding: 0 2px;
+    -webkit-app-region: no-drag;
+}
+
+.menu-item{
+    padding:0 5px;
+    border-radius: 10px;
+    -webkit-app-region: no-drag;
+}
+
+.menu-list .drop-down{
+    background-color: #fff;
+    box-shadow: 1px 1px 5px rgb(39, 38, 38);
+    width: 110px;
+    color: #000;
+    z-index: 1000;
+    position: absolute;
+    padding: 4px;
+    -webkit-app-region: no-drag;
+    display: none;
+}
+
+.menu-list .drop-down .list{
+    border-bottom: 1px solid #ccc;
+    padding: 3px;
+    width: 100%;
+    height: 25px;
+    position: relative;
+}
+
+.menu-list .drop-down .list:hover{
+    background-color: rgb(0, 122, 205, 0.1);
+}
+
+.menu-list:hover .drop-down{
+    display: block;
+    z-index: 1000;
+}
+
+.zoom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.zoom .out,
+.zoom .in{
+    margin-left: 2px;
+    position: relative;
+}
+
+.zoom .in div{
+    width: 10px;
+    height: 3px;
+}
+
+.zoom .out div{
+    width: 10px;
+    height: 2px;
+    position: absolute;
+}
+
+.zoom .out div::after{
+    content: '';
+    width: 10px;
+    height: 2px;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.drop-down .list .lar{
+    border-left: 5px solid rgb(146, 145, 145);
+    border-right: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.drop-down .drop-down2{
+    border: none;
+    width: 20px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px rgb(39, 38, 38);
+    min-width: 120px;
+    z-index: 1000;
+    right: -120px;
+    top: 0;
+    padding: 4px;
+    -webkit-app-region: no-drag;
+    display: none;
+}
+
+.drop-down2 .list input{
+    margin-right: 2px;
+}
+
+.drop-down .list.sidebarItem:hover .drop-down2{
+    display: block;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+

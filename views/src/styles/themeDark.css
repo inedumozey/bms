@@ -1,0 +1,98 @@
+/* ---------------------app container--------------------- */
+.themeDark.appContainer{
+    background: var(--themeDarkAppColor);
+    
+}
+
+
+/* -------------------------header------------------------- */
+.themeDark .header{
+    box-shadow: var(--themeDarkShadow1);
+    color: var(--themeDarkHeaderText);
+    background-image: linear-gradient(
+        var(--themeDarkGrad1),
+        var(--themeDarkGrad2),
+        var(--themeDarkGrad3),
+        var(--themeDarkGrad4),
+        var(--themeDarkGrad5),
+        var(--themeDarkGrad6),
+        var(--themeDarkGrad7),
+        var(--themeDarkGrad8),
+        var(--themeDarkGrad9),
+        var(--themeDarkGrad10)
+    )
+}
+
+.themeDark .header-wrapper .minimize div{
+    background-color: var(--themeDarkHeaderText);
+}
+
+.themeDark .header-wrapper .maximize div{
+    border: 2px solid var(--themeDarkHeaderText);;
+}
+
+.themeDark .menu-item{
+    color: var(--themeDarkHeaderText);
+}
+.themeDark .menu-item:hover{
+    background-color: var(--themeDarkHoverColor);
+}
+
+.themeDark .zoom .out,
+.themeDark .zoom .in{
+    box-shadow: inset 2px 2px 5px var(--themeDarkShadow2);
+}
+
+.themeDark .zoom .in div{
+    background: var(--themeDarkHeaderText);
+}
+
+.themeDark .zoom .out div{
+    background: var(--themeDarkHeaderText);
+}
+
+.themeDark .zoom .out div::after{
+    background: var(--themeDarkHeaderText);
+}
+
+
+/* -------------------------side bar------------------------- */
+.themeDark .sidebar{
+    background: var(--themeDarkSidebarColor);
+}
+
+
+.themeDark .explorer .line{
+    background: var(--themeDarkSidebarColor);
+}
+.themeDark .explorer .line::before{
+    background: var(--themeDarkSidebarColor);
+}
+.themeDark .explorer .line::after{
+    background: var(--themeDarkSidebarColor);
+}
+
+.themeDark .showAddDocModalBtn{
+    color: #ccc;
+    background: var(--themeDarkAppColor);
+}
+
+.themeDark .docFormWrapper{
+    background: rgb(77 77 78 / 87%);
+}
+.themeDark .document .name{
+    color:rgb(192, 186, 186)
+}
+.themeDark .document .date{
+    color: rgb(177, 114, 114)
+}
+
+/* new */
+
+.inTab.document{
+    background: var(--themeDarkUserSelectedTabColor)
+}
+
+.active.document{
+    border: 2px solid var(--static-theme);
+}

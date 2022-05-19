@@ -1,0 +1,53 @@
+.pos_wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.pos_header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pos_main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pos_wrapper .pos{
+    margin: 10px;
+    border: 2px solid rgb(51, 50, 50);
+    padding: 10px;
+}
+
+.pos_entry{
+    min-width: 300px;
+}
+
+.pos_temp_data{
+    min-width: 500px;
+    height: 300px;
+}
+
+.pos_temp_payment_method{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.pos_temp_payment_method .form-group button{
+    background: transparent;
+}
+
+.pos_temp_payment_method .form-group button:hover{
+    opacity: .6;
+}
+
+.invoice{
+    width: 300px;
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+}

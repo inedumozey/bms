@@ -1,0 +1,319 @@
+:root{
+    --rightFrameWidth: 150px;
+    --topFramHeight: 25px;
+    --rightWidth: 20px ;
+    --centerWidth: 250px;
+    --topItemColor: rgb(252, 248, 248);
+}
+
+.dashbaord{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.dashbaord .rightFrame{
+    position: absolute;
+    width: var(--rightFrameWidth);
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: var(--themeDarkSidebarColor);
+    transition: .3s;
+}
+.dashbaord .leftFrame{
+    position: absolute;
+    width: calc(100% - var(--rightFrameWidth));
+    background: transparent;
+    left: 0;
+    top: 0;
+    transition: .3s;
+    height: 100%;
+
+}
+.shrink.rightFrame{
+    transform: translateX(var(--rightFrameWidth));
+}
+.shrink.leftFrame{
+    width: 100%;
+}
+
+.dashbaord .topFrame{
+    width: 100%;
+    height: var(--topFramHeight);
+    background: var(--themeDarkSidebarColor);
+    position: relative;
+    color: var(--topItemColor);
+}
+
+.dashbaord .topFrame .left{
+    position: absolute;
+    width: calc(100% - var(--rightWidth) - var(--centerWidth));
+    height: 100%;
+    left: 0;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.dashbaord .dashboardTab{
+    height: 100%;
+    width: 100px;
+    background: rgb(84, 83, 83);
+    display: inline-block;
+    user-select: none;
+    -webkit-user-select: none;
+    margin-right: 2px;
+    position: relative;
+}   
+.dashboardTab:hover{
+    opacity: .8;
+}
+.dashboardTab.active{
+    background-color: var(--themeDarkAppColor);
+}
+.dashbaord .dashboardTabText{
+    height: 100%;
+    width:85%;
+    text-align: center;
+    padding-top: 2px;
+    position: absolute;
+    left: 0;
+    
+}
+.dashbaord .dashboardRemoveTabBtn{
+    background: transparent;
+    height: 18px;
+    width: 14px;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.dashboardRemoveTabBtn:hover{
+    background: rgb(75, 77, 77);
+}
+.dashboardRemoveTabBtn div{
+    height: 10px;
+    width: 2px;
+    background: transparent;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+.dashboardRemoveTabBtn div:after{
+    content: '';
+    height: 10px;
+    width: 2px;
+    background: transparent;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.active.dashboardTab{
+    background: var(--themeDarkAppColor);
+}
+.dashboardTab:hover .dashboardRemoveTabBtn div,
+.dashboardTab:hover .dashboardRemoveTabBtn div:after{
+    background: #ccc
+}
+
+.active.dashboardTab .dashboardRemoveTabBtn div,
+.active.dashboardTab .dashboardRemoveTabBtn div:after{
+    background: #ccc
+}
+
+
+.dashbaord .topFrame .right{
+    position: absolute;
+    width: var(--rightWidth);
+    height: 100%;
+    right: 0;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.expandSidebar{
+    transform: rotate(180deg);
+    position: absolute;
+    border-left: 12px solid var(--static-theme);
+    border-right: 12px solid transparent;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    right: 5px;
+}
+.shrinkSidebar{
+    transform: rotate(-180deg);
+    position: absolute;
+    right: -8px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid var(--static-theme);
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+
+.dashbaord .topFrame .center{
+    position: absolute;
+    width: calc(var(--centerWidth) - 5px);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    right: 20px;
+    padding-left: 5px
+}
+
+.topFrame .center input{
+    padding: 0 5px 0 15px;
+    height: 100%;
+    width: 89%;
+    border: none;
+    border-radius: 18px 0 0 18px;
+    position: absolute;
+    left: 0;
+}
+
+.topFrame .center .searchIcon{
+    width: calc(100% - 89%);
+    height: 100%;
+    background: var(--inputBg);
+    position: absolute;
+    right: 0;
+}
+
+.topFrame .center input:focus ~ .searchIcon{
+    background: var(--inputFocusBg);
+}
+
+.topFrame .center .searchIcon div{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border:3px solid #000;
+    border-radius: 50%;
+    top: 3px;
+    left: 4px
+}
+
+.topFrame .center .searchIcon div:after{
+    position: absolute;
+    content: '';
+    background-color: #000;
+    height: 8px;
+    width: 6px;
+    right: -6px;
+    top: 7.5px;
+    transform:  rotate(130deg);
+}
+
+.dashboardSidebar{
+    width: 100%;
+    height: 100%;
+}
+
+.dashboardSidebar .sibebarTop{
+    height: var(--topFramHeight);
+    border: 1px solid;
+    text-align: center;
+    color:#fff;
+    border: none;
+    background: var(--static-theme)
+}
+.dashboardSidebar .sibebarBody{
+    color:rgb(138, 135, 135);
+    padding: 10px 0 10px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    margin-left: 15px;
+}
+.sibebarBody .item{
+    padding:10px;
+    cursor: pointer;
+}
+
+
+.sibebarBody .item:hover{
+    opacity: .6;
+}
+
+.dashbaord .bottomFrame{
+    width: 100%;
+    height: calc(100% - var(--topFramHeight));
+}
+.dashboardMain{
+    width: 100%;
+    height: calc(100% - var(--invenoryHeaderHeight));
+    color: #fff;
+}
+
+.sibebarBody .item.active{
+    width: 90%;
+    position: relative;
+    color: #fff;
+    background-color: var(--themeDarkAppColor);
+}
+.sibebarBody .item.active:after{
+    position: absolute;
+    content: '';
+    left:-33.2px;
+    top:0px;
+    border-right: 14.5px solid var(--themeDarkAppColor);
+    border-bottom: 18.5px solid transparent;
+    border-left: 18.5px solid transparent;
+    border-top: 18.5px solid transparent;
+}
+
+.dashboardMainMenu{
+    height: var(--invenoryHeaderHeight);
+    box-shadow: 2px 2px 2px #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+.dashboardMainMenuList{
+    height: 100%;
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    white-space: nowrap;
+
+}
+
+.dashboardMainMenu .currency{
+    color: #fff;
+    cursor: pointer;
+}
+
+.dashboardMainMenu .currency span{
+    color: greenyellow;
+}
+
+.dashboardMainMenuList .menu{
+    height: 70%;
+    border-radius: 10px;
+    margin-right: 2px;
+    color: #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 1;
+}
+.dashboardMainMenuList .menu:hover{
+    opacity: .5;
+}
+
+.dashboardMainMenuList .active.menu{
+    padding: 2px;
+    color: #fff;
+    background: var(--static-theme);
+    border: 2px solid var(--themeDarkBorderColor2);
+}

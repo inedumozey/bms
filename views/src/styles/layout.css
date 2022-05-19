@@ -1,0 +1,64 @@
+.appContainer{
+    height: '100vh';
+
+}
+
+.header{
+    height: var(--headerHeight);
+    -webkit-user-select: none;
+    user-select: none;
+    width: 100vw
+}
+
+.userTab{
+    height: var(--userTabHeight);
+    margin-top: var(--userTabMarginTop);
+    
+}
+
+.footer{
+    height: var(--footerHeight);
+}
+
+.wrapper{
+    height: calc(100vh - var(--headerHeight) - var(--footerHeight));
+    position: relative;
+}
+
+.isTabs.wrapper{
+    height: calc(100vh - var(--headerHeight) - var(--footerHeight) - var(--userTabHeight) - 3px);
+}
+
+.main{
+    position: absolute;
+    width: calc(100% - 40px);
+    height: 100%;
+}
+
+.sidebar{
+    position: absolute;
+    width: var(--sidebarWidth);
+    height: 100%;
+    align-items: center;
+}
+
+.dashboardBtn{
+    height: 35px;
+    margin-top: 5px;
+}
+
+.side-menu{
+    width: var(--sidebarWidth);
+    height: calc(100% - 35px);
+}
+
+/* if user tab is active */
+.userTabActive .wrapper{
+    height: calc(100vh - var(--headerHeight) - var(--footerHeight) - var(--userTabHeight) - var(--userTabMarginTop));
+    position: relative;
+}
+
+.docFormWrapper{
+    height: calc(100vh - var(--headerHeight) - var(--footerHeight));
+    width: 500px;
+}

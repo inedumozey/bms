@@ -1,0 +1,40 @@
+.addForm{
+    color: #ffffff;
+    width:100%;
+    max-width: 600px;
+    margin: auto;
+    padding-bottom: 20px;
+    height: 98%;
+}
+.form-title{
+    text-align: center;
+    font-weight: 400;
+    padding: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    height: 40px;
+    background: var(--static-theme);
+    width:100%;
+}
+
+.addForm form{
+    margin: 25px auto;
+    width: 90%;
+    height: calc(100% - 40px);
+    padding: 0 10px;
+}
+
+.protect{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    background: rgb(95, 25, 78);
+    padding: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+.hide.protect-field{
+    display: none;
+}

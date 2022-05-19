@@ -1,0 +1,128 @@
+/* ---------------------app container--------------------- */
+.themeSilver.appContainer{
+    background: var(--themesilverAppColor);
+    
+}
+
+
+/* -------------------------header------------------------- */
+.themeSilver .header{
+    box-shadow: var(--themeSilverShadow1);
+    background-image: linear-gradient(
+        var(--themeSilverGrad1),
+        var(--themeSilverGrad2),
+        var(--themeSilverGrad3),
+        var(--themeSilverGrad4),
+        var(--themeSilverGrad5),
+        var(--themeSilverGrad6),
+        var(--themeSilverGrad7),
+        var(--themeSilverGrad8),
+        var(--themeSilverGrad9),
+        var(--themeSilverGrad10)
+    )
+}
+
+
+.themeSilver .header-wrapper .right .quit div{
+    background-color: #fff;
+}
+
+.themeSilver .header-wrapper .right .quit div:after{
+    background-color: #fff;
+}
+
+.themeSilver .header-wrapper .minimize div{
+    background-color: #000;
+}
+
+.themeSilver .header-wrapper .maximize div{
+    border: 2px solid #000;
+}
+
+.themeSilver .menu-item{
+    color: #000;
+}
+.themeSilver .menu-item:hover{
+    background-color: var(--themeSilverHoverColor);
+}
+
+.themeSilver .zoom .out,
+.themeSilver .zoom .in{
+    box-shadow: inset 2px 2px 5px var(--themeSilverShadow2);
+}
+
+.themeSilver .zoom .in div{
+    background: #000;
+}
+
+.themeSilver .zoom .out div{
+    background: #000;
+}
+
+.themeSilver .zoom .out div::after{
+    background: #000;
+}
+
+
+
+/* -------------------------side bar------------------------- */
+.themeSilver .sidebar{
+    background: var(--themesilverSidebarColor);
+}
+
+
+
+/* --------------------------user tabs-------------------------- */
+.themeSilver .userTab{
+    background: var(--themesilverSidebarColor);   
+}
+
+.themeSilver .tabText{
+    color: #fff;
+}
+.themeSilver .tabWrapper{
+    background: var(--themesilverUserTabColor);
+}
+
+.themeSilver .tabWrapper:after{
+    background: var(--themesilverUserTabColor);
+}
+
+.themeSilver .tabWrapper:before{
+    background: var(--themesilverUserTabColor);
+}
+
+.themeSilver .scrollX::-webkit-scrollbar-thumb{
+    background: rgb(15, 15, 16)
+}
+.themeSilver .scrollY::-webkit-scrollbar-thumb{
+    background: rgb(15, 15, 16)
+}
+
+.themeSilver .title{
+    color: rgb(196, 191, 191);
+}
+
+.themeSilver .line{
+    background: var(--themesilverSidebarColor);
+}
+.themeSilver .line::before{
+    background: var(--themesilverSidebarColor);
+}
+.themeSilver .line::after{
+    background: var(--themesilverSidebarColor);
+}
+
+
+.themeSilver .showAddDocModalBtn{
+    color: #fff;
+    background: var(--themesilverAppColor);
+}
+
+
+.themeSilver .document .name{
+    color:#000
+}
+.themeSilver .document .date{
+    color: rgb(230, 228, 228)
+}

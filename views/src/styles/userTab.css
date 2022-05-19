@@ -1,0 +1,108 @@
+.userTab{
+    background: var(--themeDarkSidebarColor);
+    height: var(--userTabHeight);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    user-select: none;
+    -webkit-user-select: none;
+    position: relative;
+}
+.userTab .logo{
+    width: 40px;
+    max-width: 40px;
+    position: absolute;
+    left:0;
+    padding: 5px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.tabList{
+    height: 80%;
+    width: 700px;
+    white-space: nowrap;
+    margin-left: 40px;
+}
+
+.misc{
+    height: 100%;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 300px
+}
+
+.tab{
+    height: 100%;
+    width: 100px;
+    margin-right: 1.5px;
+    background: var(--themeDarkUserTabColor);
+    display: inline-block;
+    padding: 2px;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+}
+
+.tab:hover{
+    opacity: .7;
+}
+
+.tabText{
+    color: #fff;
+    height: 100%;
+    background-color: transparent;
+    width:80%;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.remove{
+    z-index: 100;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:50%;
+    transform: translateY(-50%);
+    right: 1px;
+    display: none;
+}
+.remove div{
+    width: 11px;
+    height: 2px;
+    background-color: #666;
+    transform: rotate(-45deg);
+    position: relative;
+}
+.remove div:after{
+    position: absolute;
+    content: '';
+    width: 11px;
+    height: 2px;
+    background-color: #666;
+    transform: rotate(90deg);
+}
+.active.tab{
+    background-color: var(--static-theme);
+}
+.tab:hover .remove{
+    display: flex;
+}
+
+.remove:hover{
+    background: var(--themeDarkSidebarColor);
+}
+.active.remove{
+    display: flex;
+}
+.active.remove div,
+.active.remove div:after{
+    background: #ccc
+}

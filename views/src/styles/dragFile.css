@@ -1,0 +1,53 @@
+.dragZone .file{
+    width:100%;
+    display: block;
+    height: 100%;
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(7, 7, 7, 0.42);
+    margin: auto;
+    cursor: pointer;
+    background-color: rgba(138, 221, 185, 0.42);
+}
+
+.dragZone .draggedIn{
+    background-color: rgb(52 201 136 / 42%);
+    border: 2px dashed rgb(23 247 149 / 42%);
+}
+
+.dragZone .invalid{
+    background-color: rgba(216, 79, 79, 0.42);
+    border: 2px solid rgb(235, 5, 5);
+}
+
+.dragZone .file input{
+    width:0;
+    height: 0;
+    visibility: hidden;
+}
+.dragZone .file-img{
+    width: 80px;
+    height: 80px;
+    display: block;
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    cursor: pointer;
+}
+.dragZone .file-img input{
+    width:0;
+    height: 0;
+    visibility: hidden;
+}
+
+.dragZone .file-img .remove{
+    position: absolute;
+    right: 0;
+    top:0;
+}

@@ -1,0 +1,32 @@
+.docFormWrapper{
+    position: relative;
+}
+
+.docFormWrapper .handle{
+    height:100%;
+    width: 4px;
+    background: transparent;
+    position: absolute;
+    right:0;
+    cursor:ew-resize;
+}
+.handle:hover{
+    background: var(--static-theme);
+}
+.dragging.handle{
+    background: var(--static-theme);
+}
+
+.docFormWrapper .quit{
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+.docFormWrapper .quit:hover{
+    opacity: .7;
+}

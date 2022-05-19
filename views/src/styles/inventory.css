@@ -1,0 +1,198 @@
+:root{
+    --invenoryHeaderHeight: 30px;
+    --categoryWidth: 150px;
+    --priceWidth: 100px;
+}
+
+.inventory{
+    color: #fff;
+    height: 100%;
+}
+
+.inventoryBody{
+    height: calc(100% - 40px);
+}
+
+
+.inventory .add{
+    min-width: 300px;
+    max-width: 400px;
+    margin: 10px auto;
+}
+.inventory .add span{
+    color: red
+}
+
+.inventory .add form{
+    padding: 10px
+}
+
+.addHeader{
+    padding: 10px 0;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--static-theme);
+    cursor: default;
+    user-select: none;
+}
+
+.flex .form-group.price{
+    width: 150px;
+    position: relative;
+}
+
+.flex .form-group.price .currency{
+    position: absolute;
+    min-width: 20px;
+    padding: 0 2px;
+    background: var(--static-theme);
+    right: 0;
+    bottom: 0;
+    height: 67%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    cursor: default;
+}
+.flex .form-group.category{
+    width: calc(100% - 150px - 5px)
+}
+
+input,
+textarea{
+    border: none
+}
+
+.add .flex{
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width: 550px)  {
+
+    .flex .form-group.price{
+        width: 100px;
+    }
+    .flex .form-group.category{
+        width: calc(100% - 100px - 5px)
+    }
+}
+
+.inventoryCount{
+    padding: 10px;
+    margin: 10px;
+    background: var(--static-theme);
+    display: inline-block;
+}
+.view{
+    margin: auto;
+    width: 100%;
+    max-width: 1500px;
+    padding: 0 10px 10px 10px;
+}
+.viewTable{
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+   
+    padding: 10px;
+}
+
+.view table{
+    cursor: default;
+    margin: auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+.view th{
+    text-align: left;
+    background: var(--static-theme);
+}
+.view th,
+.view td{
+    border: 1px solid #ccc;
+    padding: 5px
+}
+
+.view tr:nth-child(even){
+    background: rgb(55, 54, 54);
+}
+.view tr:nth-child(odd){
+    background: rgb(41, 40, 40);
+}
+.view tr{
+    position: relative;
+}
+.view tr:hover{
+    background: rgb(192, 26, 26);
+}
+
+.view .tableItemEdit,
+.view .tableItemDel{
+    padding: 0 3px;
+    width: 20px;
+    height: 20px;
+    background: #000;
+    cursor: pointer;
+}
+.view .tableItemEdit{
+    color: var(--static-theme);
+}
+
+.view .tableItemDel{
+    color: red;
+}
+
+.view .tableItemEdit:hover,
+.view .tableItemDel:hover{
+    opacity: .8;
+    color: #fff
+}
+
+.clearTable{
+    background: red;
+    cursor: pointer
+}
+
+.inventory .menuWrapper{
+    display: flex;
+    padding: 0 15px;
+    height: 40px;
+    white-space: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.menuWrapper .menuList{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.menuWrapper .menuList .menu{
+    padding: 0 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    border:2px solid #888;
+    margin-right: 2px;
+}
+.menuWrapper .menuList .menu:hover{
+    opacity: .6;
+}
+.menuWrapper .menuList .menu.export,
+.menuWrapper .menuList .menu.print{
+    cursor: default;
+}
+
+.menuWrapper .menuList select{
+    width: 80px;
+    margin-left: 2px;
+    padding: 2px
+}
+.menuWrapper .menuList .menu.viewAdd{
+    border-radius: 0;
+    border: none
+}
+
+.menuWrapper .menu.active{
+    background: var(--static-theme)
+}

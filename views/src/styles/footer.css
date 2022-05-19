@@ -1,0 +1,23 @@
+.footer{
+    color: var(--themeDarkHeaderText);
+    background: var(--static-theme);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    -webkit-user-select: none;
+    z-index: 2;
+}
+
+.copyright,
+.version,
+.contact{
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contact a{
+    margin: 0 5px;
+    cursor: pointer;
+}

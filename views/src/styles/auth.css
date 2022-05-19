@@ -1,0 +1,47 @@
+.auth{
+    background: rgb(110 109 109);
+    width: 370px;
+    box-shadow: 2px 2px 3px 2px #000;
+    padding: 10px
+    
+}
+
+.auth .auth-title{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.auth form{
+    margin-top: 3px
+}
+
+.auth input[type="submit"]{
+    color:#fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.auth .error{
+    margin-bottom: 5px;
+}
+
+.recoverPass{
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    display: inline-block;
+    padding: 2px;
+    font-weight: 600;
+    text-align: right;
+    font-size: 1rem;
+}
+
+.recoverPass:hover{
+    opacity: .5;
+}
+.auth .question{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
